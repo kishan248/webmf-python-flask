@@ -1,6 +1,7 @@
 pipeline {
-  //agent { docker { image 'python:3.7.6' } }
-  label 'python-flask'
+  agent { 
+    //docker { image 'python:3.7.6' } 
+  label 'python-flask' }
   stages {
     stage('build') {
       steps {
